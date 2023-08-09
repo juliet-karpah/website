@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Card(){
     const links = [
         {title:"React Portfolio", url:"https://github.com/juliet-karpah/react-portfolio", logo:"/github-logo.svg"},
@@ -16,7 +18,7 @@ export default function Card(){
           target="_blank"
           className="flex items-center p-3 text-base text-gray-600 rounded-lg"
         >
-        <img src={link.logo} className="logo-img" />
+        <Image width="24" height="24" src={link.logo} className="logo-img" />
           <span className="flex-1 ml-3 whitespace-nowrap">{link.title}</span>
         </a>
       </li>
