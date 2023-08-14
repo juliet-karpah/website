@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,8 +8,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  background: no-repeat url('/mars.jpg');
-  background-size: cover;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,8 +20,9 @@
 }
 
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Indie Flower', cursive;
   color: #000000;
+
 }
 
 section{
@@ -35,4 +35,30 @@ section{
 .logo-img{
   filter: brightness(0);
   opacity: 50%;
+}
+
+.bar {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  width: 500px;
+  height: 300px;
+  transform: translate(50%, -50%);
+  transition: 1s all;
+}
+
+.foo {
+  animation: foo;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 200px;
+  height: 50px;
+  transition: 0.5s all;
+}
+
+.scroll{
+  width: 100%;
+  height: 1000px;
+  scroll-behavior: smooth;
 }

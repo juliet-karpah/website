@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-export default function Card(){
+export default function Card(props){
     const links = [
         {title:"React Portfolio", url:"https://github.com/juliet-karpah/react-portfolio", logo:"/github-logo.svg"},
         {title: "LinkedIn Profile", url:"https://www.linkedin.com/in/juliet-g-864950b8/", logo:"/linkedin-logo.svg"}
     ]
   return (
-    <div className="w-full max-w-sm p-4 bg-white border border-gray-200 shadow sm:p-6 w-[300px] h-[500px] ">
+    <div className={`w-full max-w-sm p-4 bg-white border border-gray-200 shadow sm:p-6 w-[300px] h-[500px] mt-[100px] ${props.style}`}>
       <h5 className="mb-3 text-base font-semibold text-gray-600 md:text-xl">
         Software Engineer
       </h5>
